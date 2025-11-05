@@ -1,0 +1,48 @@
+# ==============================================================================
+# ENVIRONMENT VARIABLES TEMPLATE
+# ==============================================================================
+# Copy this file to .env and update with your actual values
+# Windows: copy env_example.txt .env
+# Linux/Mac: cp env_example.txt .env
+
+# ==============================================================================
+# DATABASE CONFIGURATION
+# ==============================================================================
+# By default, Django uses SQLite (no configuration needed)
+# For production, use PostgreSQL or MySQL:
+
+# DATABASE_ENGINE=django.db.backends.postgresql
+# DATABASE_NAME=your_database_name
+# DATABASE_USER=your_database_user
+# DATABASE_PASSWORD=your_database_password
+# DATABASE_HOST=localhost
+# DATABASE_PORT=5432
+
+# ==============================================================================
+# DJANGO SETTINGS
+# ==============================================================================
+# Secret key for Django (generate a new one for production)
+SECRET_KEY=django-insecure-change-this-in-production
+
+# Debug mode (True for development, False for production)
+DEBUG=True
+
+# Allowed hosts (comma-separated list)
+ALLOWED_HOSTS=localhost,127.0.0.1
+
+# ==============================================================================
+# JWT CONFIGURATION
+# ==============================================================================
+# JWT token lifetime in hours
+JWT_ACCESS_TOKEN_LIFETIME_HOURS=1
+
+# JWT refresh token lifetime in days
+JWT_REFRESH_TOKEN_LIFETIME_DAYS=7
+
+# ==============================================================================
+# NOTES
+# ==============================================================================
+# 1. Never commit the .env file to version control (it's in .gitignore)
+# 2. Keep your SECRET_KEY secure and never share it
+# 3. Use different values for development and production
+
